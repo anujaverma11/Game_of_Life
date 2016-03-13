@@ -18,6 +18,5 @@ To set up development environment:
 1. Clone this project
 2. bundle install in project directory
 3. rake db:migrate to set up database (make sure you have postgres running)
-4. rake test to run tests
-5. rails s to start server
+4. rails s to start server
 
