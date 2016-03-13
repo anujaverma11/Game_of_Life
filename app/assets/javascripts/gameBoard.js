@@ -23,6 +23,12 @@ $(document).ready(function () {
     $(this).toggleClass("trueStop falseStop");
   });
 
+  $("#reset").on("click", function() {
+
+    $('td.live').addClass("dead");
+    $('td').removeClass('live');
+  });
+
 
 });
 
