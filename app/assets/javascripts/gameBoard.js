@@ -23,8 +23,8 @@ $(document).ready(function () {
     $(this).toggleClass("trueStop falseStop");
   });
 
+  // Reset the board to have no live cell
   $("#reset").on("click", function() {
-
     $('td.live').addClass("dead");
     $('td').removeClass('live');
   });
