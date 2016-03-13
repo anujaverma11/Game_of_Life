@@ -32,9 +32,11 @@ function startGenerations() {
     document.getElementById(cellID).className = 'live cell';
   });
 
-  if (cellWillDie.length > 0 || cellWillLive.length > 0){
-    setTimeout(startGenerations, 500);
-
+  if(document.getElementById('stop').className.indexOf("trueStop") > -1){
+    var trueStop = true
+  }
+  if ((cellWillDie.length > 0 || cellWillLive.length > 0) && !trueStop){
+    var t = setTimeout(startGenerations, 500);
   }
 }
 

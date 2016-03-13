@@ -18,10 +18,10 @@ $(document).ready(function () {
 
   // call startGenerations function on button click
   $('.start').click(startGenerations);
-
-
-
-
+  $('#stop').on("click", function() {
+    $(this).toggleClass("trueStop falseStop");
+    // document.getElementByClass('.falseStop').className = '.trueStop';
+  });
 
 });
 
