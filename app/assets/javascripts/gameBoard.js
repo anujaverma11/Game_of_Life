@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
 
   // create a 50X50 grid
@@ -18,10 +17,12 @@ $(document).ready(function () {
 
   // call startGenerations function on button click
   $('.start').click(startGenerations);
+
+  // Toggle button on button click
   $('#stop').on("click", function() {
     $(this).toggleClass("trueStop falseStop");
-    // document.getElementByClass('.falseStop').className = '.trueStop';
   });
+
 
 });
 

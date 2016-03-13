@@ -1,7 +1,14 @@
 // startGenerations function will create generations of the selected cells in a grid.
 // Any live cell with two or three live neighbours lives on to the next generation - this is acheived by cell class property and is not a part of any code change.
+var trueStop
 
 function startGenerations() {
+
+  if(trueStop === true){
+    trueStop = false
+    document.getElementById('stop').className = 'falseStop waves-effect waves-light btn';
+  }
+
 
   // fetching values of all cells and assigning it to allElements
  var cellWillDie = [];
@@ -33,8 +40,9 @@ function startGenerations() {
   });
 
   if(document.getElementById('stop').className.indexOf("trueStop") > -1){
-    var trueStop = true
+    trueStop = true
   }
+
   if ((cellWillDie.length > 0 || cellWillLive.length > 0) && !trueStop){
     var t = setTimeout(startGenerations, 500);
   }

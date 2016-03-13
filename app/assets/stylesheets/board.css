@@ -1,8 +1,42 @@
+h2{
+  font-size: 50px;
+  font-family: 'Fredericka the Great', cursive;;
+  text-align: center;
+  color: teal;
+}
+table{
+  height: 200px;
+  width: 200px;
+}
+
 table, td {
    border: .5px solid black;
    padding: 5px;
 }
 
+td {
+  height: 1px;
+  width: 1px;
+}
+
 .live {
   background-color: #00FF00;
 }
+
+#header {
+    width: 100%;
+    height: 50px;
+}
+
+#main {
+    margin: auto;
+    border: 2px solid black;
+}
+#first {
+
+    float: left;
+    padding: 20px;
+}
+#second {
+    padding: 20px;
+    }
