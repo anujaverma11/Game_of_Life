@@ -46,13 +46,13 @@ $(document).ready(function(){
   });
 
   $(".Glider").on("click", function() {
-    $('').addClass("live");
-    $('').removeClass('dead');
+    $('#X0_1,#X1_2,#X2_0,#X2_1,#X2_2').addClass("live");
+    $('#X0_1,#X1_2,#X2_0,#X2_1,#X2_2').removeClass('dead');
   });
 
   $(".spaceship").on("click", function() {
-    $('#X19_24,#X20_24,#X21_24').addClass("live");
-    $('#X19_24,#X20_24,#X21_24').removeClass('dead');
+    $('#X1_1,#X1_4,#X2_5,#X3_1,#X3_5,#X4_2,#X4_3,#X4_4,#X4_5').addClass("live");
+    $('#X1_1,#X1_4,#X2_5,#X3_1,#X3_5,#X4_2,#X4_3,#X4_4,#X4_5').removeClass('dead');
   });
 
 });
