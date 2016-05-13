@@ -1,3 +1,5 @@
+Anuja
+
 Tech used: Rails, Javascript/Jquery, HTML, CSS, Materialize, Heroku
 
 ### Game of Life
